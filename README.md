@@ -1,6 +1,7 @@
 # cventura-carter-2023
 This repository contains scripts used to export coordinates from IMOD models to Dynamo 'filament with torsion' models and for determining filament polarities from multireference alignment classification results.
 
+
 1. Workflow for export of IMOD model coordinates into Dynamo 'filament with torsion' for subtomgram averaging
 
 Requirements:
@@ -28,7 +29,12 @@ F) Proceed with cropping particles (f. e. in the Dynamo GUI) and alignment proje
 
 
 
+
+
 2. Workflow for filament polarity determination
+Requirements:
+- Dynamo version 1.1.2 (or similar)
+- matlab version 2019 (or similar)
 
 A) Perform one round of multireference alignment to a minus and plus end oriented filament reference in Dynamo (2 references for luminal filaments, 8 or more references for microtubules with different protofilament numbers).
 
