@@ -10,7 +10,7 @@
 % minus, 6: 14 PF plus, 7; 15 PF minus, 8: 15 PF plus.
 % A more detailed description of the script can be found at the bottom.
 
-% Requirements: Dynamo activated in matlab (we used version 1.1.460
+% Requirements: Dynamo activated in MATLAB (we used version 1.1.460
 
 
 % Define the name of the alignment project and the iteration of multireference alignment used.
