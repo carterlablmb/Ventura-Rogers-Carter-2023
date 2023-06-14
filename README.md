@@ -36,7 +36,7 @@ Requirements:
 - Dynamo version 1.1.2 (or similar)
 - MATLAB version 2019 (or similar)
 
-A) Perform one round of multireference alignment to a minus and plus end oriented filament reference in Dynamo. If you only want to find out the polarity of homogeneous filaments, 2 references with opposite polarity are enough. If you also want to classify other features (f. e. microtubule protofilament numbers) more references are needed. I used 8 references (12, 13, 14, 15 protofilaments, each plus and minus). 
+A) Perform one round of multireference alignment to a minus and plus end oriented filament reference in Dynamo. If you only want to find out the polarity of homogeneous filaments, 2 references with opposite polarity are enough. If you also want to classify other features (f. e. microtubule protofilament numbers) more references are needed (we used 8 references, 12, 13, 14, 15 protofilaments, each plus and minus). 
 
 B) In MATLAB, run the script 'LuminalFilamentPol_Assessment_script.m' (for MRA with 2 references) or 'Microtubule_PFnumber_Polarity_Assessment_script.m' (for 8 references) to analyse the distribution of particle classes in each filament and to assign the filament models to a polarity.
 
