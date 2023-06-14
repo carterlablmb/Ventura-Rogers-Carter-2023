@@ -81,9 +81,6 @@ imodinfo -f modinfo.txt $modFolder/*.mod
 
 #print desired object and contours
 grep -e 'mod' -e ",$obj,0" modinfo.txt | sed 's/^.*TS/TS/' | sed 's/.*#//' | cut -f1 -d, > modLIST.txt
-#sed; s for substitute match (with nothing so delete from line). 's/.*#//' will remove everything before a # match.'s/^.*TS/TS/' will match any text before TS and replace with TS. ^[ \t]* will match any space at beginning of line, [ \t]*$ for end of line
-#cut will only keep the first field after the deliminator ','
-#grep; -e for pattern match. -A to print 2 lines after match
 
 #Clean up before matlabPrinter
 rm $mP_out
@@ -99,7 +96,7 @@ while IFS= read -r line; do
 		#Print tomogram volume list to .vll
 		vllPrinter
 
-		#convert imod model to text fie containing x,y,z co-ordinates of points, -ob to list objects and contours
+		#convert imod model to text file containing x,y,z co-ordinates of points, -ob to list objects and contours
 		model2point -i $modFolder/$mod -ou $modout.txt -ob
 	else
 		n=$line
