@@ -20,12 +20,12 @@
 % 2: filament with polarity 2 (opposite to polarity 1)
 
 % Requirements: 
-% - Dynamo activated in matlab (we used version 1.1.460
+% - Dynamo activated in MATLAB (we used version 1.1.460
 % - subTOM (we used version 1.1.2)
 
 
-% Add the path to subTOM MOTL utilities in matlab
-addpath('/lmb/home/cventura/Software/subTOM/src/MOTL','-end');
+% Add the path to subTOM MOTL utilities in MATLAB
+addpath('path-to/subTOM/src/MOTL','-end');
 
 % Define the name of the alignment project and the iteration of multireference alignment used.
 project_name='MyProjectName';
