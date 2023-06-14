@@ -6,7 +6,7 @@ This repository contains scripts used to export coordinates from IMOD models to 
 
 Requirements:
 - Dynamo version 1.1.2 (or similar)
-- matlab version 2019 (or similar)
+- MATLAB version 2019 (or similar)
 - IMOD version 4.10.32 (or similar)
 
 - a folder with tomograms softlinked. Convention: TS_01_bin4.rec, TS_02_bin4.rec, etc.
