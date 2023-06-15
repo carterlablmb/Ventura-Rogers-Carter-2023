@@ -199,11 +199,11 @@ if flip_table==1
     'rotate_psi', 0,...
     'rotate_theta', -180,...
     'rand_inplane', 0)
-    % Read in the rotated MOTL and convert back into a Dynamo table.
+    % Read in the rotated MOTL and convert back into a Dynamo table. 
     Flipmotl=dread(sprintf('%s_orig_tbl_LA_Pol1_-180theta_afterFLIP.em',date));
-    flipDyntbl=dynamo__motl2table(Flipmotl);
-    % Copy the angles after rotation into the original orig_tbl_for_flip (angles are columns 7-9)
-    FINAL_AfterFlip=orig_tbl_for_flip;
+    flipDyntbl=sortrows(dynamo__motl2table(Flipmotl),1);
+    % Copy the angles after rotation into the original orig_tbl_for_flip (angles are columns 7-9). Make sure both tables are in the same order.
+    FINAL_AfterFlip=sortrows(orig_tbl_for_flip,1);
     FINAL_AfterFlip(:,7:9)=flipDyntbl(:,7:9);
     % Combine the original table for class 2 with the rotated table for class 1.
     FINAL_assembled_table=[FINAL_AfterFlip' orig_tbl_noFlip']';
